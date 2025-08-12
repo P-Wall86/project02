@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coaching Ontológico</title>
+    <link rel="stylesheet" href="styles/onepage.css">
+</head>
+
+<body>
+    <header>
+        <h1>Coaching Ontológico para tu crecimiento personal y profesional</h1>
+        <p>Transformá tu vida - Descargá nuestro catálogo de cursos y contactános.</p>
+        <button class="btn-primary"
+            onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">Descargar PDF</button>
+        <div style="margin-top: 10px;">
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">IG</a> |
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">FB</a> |
+            <a href="https://youtube.com" target="_blank" aria-label="YouTube">YT</a>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="video-section">
+            <p>Conocé quiénes somos y cómo te acompañamos en tu formación.</p>
+            <video controls poster="https://via.placeholder.com/700x394.png?text=Video+Institucional">
+                <source src="video-institucional.mp4" type="video/mp4">
+                Tu navegador no soporta video HTML5.
+            </video>
+        </section>
+
+        <section class="benefits">
+            <article class="benefit">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M12 2L2 7v7c0 4 4 6 10 6s10-2 10-6V7l-10-5zM7 14a1 1 0 110-2 1 1 0 010 2zm10 0a1 1 0 110-2 1 1 0 010 2zm-5 4a4 4 0 100-8 4 4 0 000 8z" />
+                </svg>
+                <h3>Exploración profunda del ser</h3>
+                <p>Descubrí nuevas perspectivas y expandí tu autoconciencia.</p>
+            </article>
+
+            <article class="benefit">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M12 12c2.21 0 4-1.79 4-4S14.21 4 12 4s-4 1.79-4 4 1.79 4 4 4zm0 2c-3.31 0-6 2.69-6 6v2h12v-2c0-3.31-2.69-6-6-6z" />
+                </svg>
+                <h3>Comunicación auténtica</h3>
+                <p>Aprendé a expresar y escuchar con claridad y empatía.</p>
+            </article>
+
+            <article class="benefit">
+                <svg viewBox="0 0 24 24">
+                    <path d="M3 6v12h18V6H3zm2 2h14v8H5V8z">
+                </svg>
+                <h3>Transformación sostenible</h3>
+                <p>Incorporá cambios duraderos que impactan en tu vida personal y profesional.</p>
+            </article>
+        </section>
+
+        <section class="testimonials" aria-label="Testimonios de clientes">
+            <article class="testimonial">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Foto de María González">
+                <div class="testimonial-text">
+                    <p>“Los cursos me ayudaron a mejorar mis habilidades y conseguir un mejor empleo.”</p>
+                    <strong>— María González</strong>
+                </div>
+            </article>
+
+            <article class="testimonial">
+                <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Foto de Juan Pérez">
+                <div class="testimonial-text">
+                    <p>“Excelente atención y contenidos actualizados. Lo recomiendo 100%.”</p>
+                    <strong>— Juan Pérez</strong>
+                </div>
+            </article>
+        </section>
+
+        <section class="download-section" id="contact-form">
+            <h2>Descargá el catálogo completo de cursos</h2>
+            <form action="#" method="POST" onsubmit="alert('Gracias por contactarte.'); return false;">
+                <input type="text" name="name" placeholder="Nombre" required />
+                <input type="email" name="email" placeholder="Correo electrónico" required />
+                <input type="tel" name="phone" placeholder="Teléfono (opcional)" />
+                <button type="submit" class="btn-submit">Enviar y Descargar</button>
+            </form>
+            <p class="privacy-note">Tus datos están seguros con nosotros.</p>
+        </section>
+
+    </main>
+
+    <div class="floating-cta" role="region" aria-label="Contactos rápidos">
+        <a href="tel:+541112345678" aria-label="Solicitar llamada">Solicitá un asesor</a>
+        <a href="https://wa.me/5491112345678" target="_blank" rel="noopener"
+            aria-label="Consultar por WhatsApp">Consultá por WhatsApp</a>
+    </div>
+
+    <footer>
+        <p>Contacto: <a href="mailto:info@coaching.com">info@coaching.com</a> | Teléfono: +54 (376) 512-3456
+        </p>
+        <p>© 2025 Coaching. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
