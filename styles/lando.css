@@ -24,7 +24,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1em 2em;
-    background-color: #0d47a1;
+    background-color: #000;
     color: white;
 }
 
@@ -54,7 +54,7 @@ header {
 }
 
 .header-socials a:hover svg {
-    fill: #93c5fd;
+    fill: yellow;
 }
 
 main {
@@ -100,7 +100,7 @@ main {
 .contact-form h2 {
     margin: 0 0 1em 0;
     font-weight: 700;
-    color: #0d47a1;
+    color: #000;
     font-size: 1.8rem;
 }
 
@@ -108,14 +108,14 @@ main {
     font-weight: 600;
     margin-bottom: 0.3em;
     display: block;
-    color: #444;
+    color: #000;
 }
 
 .contact-form input,
 .contact-form textarea {
     width: 100%;
     padding: 0.75em 1em;
-    border: 1.5px solid #ccc;
+    border: 1.5px solid #000;
     border-radius: 6px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
@@ -124,7 +124,7 @@ main {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: #0d47a1;
+    border-color: #000;
     outline: none;
 }
 
@@ -134,7 +134,7 @@ main {
     font-size: 1.15rem;
     font-weight: 700;
     color: white;
-    background-color: #0d47a1;
+    background-color: #000;
     border: none;
     border-radius: 30px;
     cursor: pointer;
@@ -142,10 +142,11 @@ main {
 }
 
 .contact-form button:hover {
-    background-color: #093974;
+    background-color: yellow;
+    color: black;
+    border: 1px solid black
 }
 
-/* Mobile styles */
 @media (max-width: 768px) {
     main {
         flex-direction: column;
@@ -198,7 +199,7 @@ main {
 
     .mobile-buttons a {
         flex: 1 1 40%;
-        background-color: #0d47a1;
+        background-color: #000;
         color: white;
         border-radius: 12px;
         font-weight: 700;
@@ -224,13 +225,10 @@ main {
     }
 
     main {
-        margin: 0;
-        padding: 0;
+        margin: 0.5rem;
+        padding: 0.3rem;
     }
 
-    .video-wrapper {
-        display: none;
-    }
 
     .contact-form {
         display: none;
