@@ -156,6 +156,7 @@
         height: 60px;
         background-color: #000;
         color: #fff;
+        flex-shrink: 0;
     }
 
     .logo {
@@ -193,15 +194,15 @@
         justify-content: center;
         align-items: center;
         padding: 1rem;
-        min-width: 320px;
+        min-width: 0;
     }
 
     .video-wrapper iframe {
         width: 100%;
         max-width: 100%;
         aspect-ratio: 16 / 9;
+        height: 100%;
         border: none;
-        min-width: 320px;
     }
 
     .contact-form {
@@ -213,6 +214,7 @@
         padding: 1rem;
         box-sizing: border-box;
         gap: 1rem;
+        overflow: hidden;
     }
 
     .contact-form h2 {
@@ -252,14 +254,14 @@
 }
 
 @media (max-width: 425px) {
-    html,
-    body {
+    html, body {
         margin: 0;
         padding: 0;
         height: 100vh;
         background-color: #f0f0f0;
         color: #000;
         font-family: sans-serif;
+        overflow: hidden;
     }
 
     body {
@@ -274,8 +276,8 @@
         padding: 1rem;
         background-color: #000;
         color: #fff;
-        flex-shrink: 0;
         height: 60px;
+        flex-shrink: 0;
     }
 
     main {
@@ -286,6 +288,8 @@
         align-items: center;
         padding: 0.5rem 1rem;
         box-sizing: border-box;
+        width: 100%;
+        height: calc(100vh - 60px);
     }
 
     .video-wrapper {
@@ -294,12 +298,15 @@
         justify-content: center;
         align-items: center;
         width: 100%;
+        max-height: 100%;
     }
 
     .video-wrapper iframe {
         width: 90%;
-        height: 100%;
-        max-height: 60vh;
+        height: auto;
+        max-height: calc(100vh - 60px - 100px);
+        aspect-ratio: 16 / 9;
+        border: none;
     }
 
     .mobile-buttons {
@@ -330,7 +337,6 @@
         fill: #fff;
     }
 
-    /* Hide stuff*/
     main> :not(.video-wrapper),
     nav.header-socials,
     .contact-form {
