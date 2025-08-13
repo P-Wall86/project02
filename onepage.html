@@ -11,19 +11,19 @@
 <body>
     <header>
         <div class="header-container">
-        <div class="logo">LOGO</div>
-        <div class="header-text">
-            <h1>Título</h1>
-            <p>Catchy one-liner</p>
+            <div class="logo">LOGO</div>
+            <div class="header-text">
+                <h1>Título</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+            </div>
+            <div class="header-socials">
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">IG</a>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">FB</a>
+                <a href="https://youtube.com" target="_blank" aria-label="YouTube">YT</a>
+            </div>
         </div>
-        <div class="header-socials">
-            <a href="https://instagram.com" target="_blank" aria-label="Instagram">IG</a>
-            <a href="https://facebook.com" target="_blank" aria-label="Facebook">FB</a>
-            <a href="https://youtube.com" target="_blank" aria-label="YouTube">YT</a>
-        </div>
-    </div>
-    <button class="btn-primary"
-        onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">Descargar PDF</button>
+        <button class="btn-primary"
+            onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">Descargar PDF</button>
     </header>
 
     <main>
@@ -75,16 +75,16 @@
             <article class="testimonial">
                 <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Foto de María González">
                 <div class="testimonial-text">
-                    <p>“Los cursos me ayudaron a mejorar mis habilidades y conseguir un mejor empleo.”</p>
-                    <strong>— María González</strong>
+                    <p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quidem.”</p>
+                    <strong>— Aemilia</strong>
                 </div>
             </article>
 
             <article class="testimonial">
                 <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Foto de Juan Pérez">
                 <div class="testimonial-text">
-                    <p>“Excelente atención y contenidos actualizados. Lo recomiendo 100%.”</p>
-                    <strong>— Juan Pérez</strong>
+                    <p>“Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, commodi.”</p>
+                    <strong>— Quintus</strong>
                 </div>
             </article>
         </section>
@@ -102,18 +102,20 @@
 
     </main>
 
-    <div class="floating-cta" role="region" aria-label="Contactos rápidos">
-        <a href="tel:+541112345678" aria-label="Solicitar llamada">Solicitá un asesor</a>
-        <a href="https://wa.me/5491112345678" target="_blank" rel="noopener"
-            aria-label="Consultar por WhatsApp">Consultá por WhatsApp</a>
-    </div>
-
     <footer>
         <p>Contacto: <a href="mailto:info@coaching.com">info@coaching.com</a> | Teléfono: +54 (376) 512-3456
         </p>
         <p>© 2025 Coaching. Todos los derechos reservados.</p>
     </footer>
 
+    <div class="floating-cta" role="region" aria-label="Contactos rápidos">
+        <a href="tel:+541112345678" class="desktop">Solicitá un asesor</a>
+        <a href="https://wa.me/5491112345678" target="_blank" rel="noopener" class="desktop">Consultá por WhatsApp</a>
+
+        <a href="tel:+541112345678" aria-label="Solicitar llamada">👤</a>
+        <a href="https://wa.me/5491112345678" target="_blank" rel="noopener" aria-label="Consultar por WhatsApp"
+            class="wa">🟢</a>
+    </div>
 </body>
 
 </html>
