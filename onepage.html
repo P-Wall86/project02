@@ -4,31 +4,39 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Coaching Ontológico</title>
+    <title>Onepage Test</title>
     <link rel="stylesheet" href="styles/onepage.css">
 </head>
 
 <body>
     <header>
-        <h1>Coaching Ontológico para tu crecimiento personal y profesional</h1>
-        <p>Transformá tu vida - Descargá nuestro catálogo de cursos y contactános.</p>
-        <button class="btn-primary"
-            onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">Descargar PDF</button>
-        <div style="margin-top: 10px;">
-            <a href="https://instagram.com" target="_blank" aria-label="Instagram">IG</a> |
-            <a href="https://facebook.com" target="_blank" aria-label="Facebook">FB</a> |
+        <div class="header-container">
+        <div class="logo">LOGO</div>
+        <div class="header-text">
+            <h1>Título</h1>
+            <p>Catchy one-liner</p>
+        </div>
+        <div class="header-socials">
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">IG</a>
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">FB</a>
             <a href="https://youtube.com" target="_blank" aria-label="YouTube">YT</a>
         </div>
+    </div>
+    <button class="btn-primary"
+        onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">Descargar PDF</button>
     </header>
 
     <main>
 
         <section class="video-section">
             <p>Conocé quiénes somos y cómo te acompañamos en tu formación.</p>
-            <video controls poster="https://via.placeholder.com/700x394.png?text=Video+Institucional">
-                <source src="video-institucional.mp4" type="video/mp4">
-                Tu navegador no soporta video HTML5.
-            </video>
+            <div class="video-wrapper">
+                <iframe width="394" height="383" src="https://www.youtube.com/embed/759IgGZgUlU"
+                    title="Este es mi primer video hablando" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </video>
+            </div>
         </section>
 
         <section class="benefits">
@@ -37,8 +45,9 @@
                     <path
                         d="M12 2L2 7v7c0 4 4 6 10 6s10-2 10-6V7l-10-5zM7 14a1 1 0 110-2 1 1 0 010 2zm10 0a1 1 0 110-2 1 1 0 010 2zm-5 4a4 4 0 100-8 4 4 0 000 8z" />
                 </svg>
-                <h3>Exploración profunda del ser</h3>
-                <p>Descubrí nuevas perspectivas y expandí tu autoconciencia.</p>
+                <h3>Benefit 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, a. Illo molestias fugit quidem et
+                    accusamus numquam, repellendus, officiis quibusdam ab voluptatem, magni ut perspiciatis.</p>
             </article>
 
             <article class="benefit">
@@ -46,16 +55,19 @@
                     <path
                         d="M12 12c2.21 0 4-1.79 4-4S14.21 4 12 4s-4 1.79-4 4 1.79 4 4 4zm0 2c-3.31 0-6 2.69-6 6v2h12v-2c0-3.31-2.69-6-6-6z" />
                 </svg>
-                <h3>Comunicación auténtica</h3>
-                <p>Aprendé a expresar y escuchar con claridad y empatía.</p>
+                <h3>Benefit 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur expedita ducimus alias sit
+                    perspiciatis provident at, error, facilis tempora, eveniet vel quasi nobis velit quaerat.</p>
             </article>
 
             <article class="benefit">
                 <svg viewBox="0 0 24 24">
                     <path d="M3 6v12h18V6H3zm2 2h14v8H5V8z">
                 </svg>
-                <h3>Transformación sostenible</h3>
-                <p>Incorporá cambios duraderos que impactan en tu vida personal y profesional.</p>
+                <h3>Benefit 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil doloremque iusto quibusdam dolorem
+                    quaerat doloribus, ratione dignissimos nulla numquam maxime. Consequatur dolores temporibus
+                    excepturi id!</p>
             </article>
         </section>
 
