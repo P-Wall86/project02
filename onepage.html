@@ -6,71 +6,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Onepage Test</title>
     <link rel="stylesheet" href="styles/onepage.css">
+    <link rel="stylesheet" href="styles/responsiveness.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="header-container">
-            <div class="logo">LOGO</div>
-            <div class="header-text">
-                <h1>Título</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+            <div class="logo"><img src="assets/images/logotest.webp" alt="Logo EFICO">
+                <p>"Cree en ti, haz lo que amas y transforma tu mundo."</p>
             </div>
             <div class="header-socials">
-                <a href="https://instagram.com" target="_blank" aria-label="Instagram">IG</a>
-                <a href="https://facebook.com" target="_blank" aria-label="Facebook">FB</a>
-                <a href="https://youtube.com" target="_blank" aria-label="YouTube">YT</a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"></a>
+                <img src="assets/images/insta.svg" alt="Instagram">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"></a>
+                <img src="assets/images/fb.svg" alt="Facebook">
+                <a href="https://youtube.com" target="_blank" aria-label="YouTube"></a>
+                <img src="assets/images/youtube.svg" alt="YouTube">
             </div>
         </div>
-        <button class="btn-primary"
-            onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">Descargar PDF</button>
     </header>
 
     <main>
-
+        <!-- VIDEO SECTION -->
         <section class="video-section">
-            <p>Conocé quiénes somos y cómo te acompañamos en tu formación.</p>
-            <div class="video-wrapper">
-                <iframe width="394" height="383" src="https://www.youtube.com/embed/759IgGZgUlU"
-                    title="Este es mi primer video hablando" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </video>
+            <div class="video-content">
+                <!-- School -->
+                <div class="video-text">
+                    <h2>LA ESCUELA</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolorum facilis debitis alias
+                        aspernatur, hic, consequuntur harum quidem dolores quas repellendus provident cupiditate
+                        architecto quaerat amet corrupti suscipit vero quam mollitia tenetur magni sequi soluta.
+                    </p>
+                    <button class="btn-primary"
+                        onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">
+                        Descargar PDF
+                    </button>
+                </div>
+
+                <!-- Institutional video -->
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/759IgGZgUlU" title="Video institucional" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
             </div>
         </section>
 
-        <section class="benefits">
-            <article class="benefit">
-                <svg viewBox="0 0 24 24">
-                    <path
-                        d="M12 2L2 7v7c0 4 4 6 10 6s10-2 10-6V7l-10-5zM7 14a1 1 0 110-2 1 1 0 010 2zm10 0a1 1 0 110-2 1 1 0 010 2zm-5 4a4 4 0 100-8 4 4 0 000 8z" />
-                </svg>
-                <h3>Benefit 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, a. Illo molestias fugit quidem et
-                    accusamus numquam, repellendus, officiis quibusdam ab voluptatem, magni ut perspiciatis.</p>
-            </article>
+        <!-- ABOUT US -->
+        <section class="about-us-section">
+            <div class="about-us-content">
+                <div class="about-us-col-left">
+                    <!-- Placeholder | Empty left column -->
+                </div>
 
-            <article class="benefit">
-                <svg viewBox="0 0 24 24">
-                    <path
-                        d="M12 12c2.21 0 4-1.79 4-4S14.21 4 12 4s-4 1.79-4 4 1.79 4 4 4zm0 2c-3.31 0-6 2.69-6 6v2h12v-2c0-3.31-2.69-6-6-6z" />
-                </svg>
-                <h3>Benefit 2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur expedita ducimus alias sit
-                    perspiciatis provident at, error, facilis tempora, eveniet vel quasi nobis velit quaerat.</p>
-            </article>
-
-            <article class="benefit">
-                <svg viewBox="0 0 24 24">
-                    <path d="M3 6v12h18V6H3zm2 2h14v8H5V8z">
-                </svg>
-                <h3>Benefit 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil doloremque iusto quibusdam dolorem
-                    quaerat doloribus, ratione dignissimos nulla numquam maxime. Consequatur dolores temporibus
-                    excepturi id!</p>
-            </article>
+                <!-- About us-->
+                <div class="about-us-col-right">
+                    <h2>Quiénes somos</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab suscipit, odit tempore consequatur
+                        optio, at dolore sed reiciendis fugiat, cupiditate perferendis inventore natus est voluptate
+                        quasi et totam? Porro nostrum veniam facere ducimus exercitationem consectetur.</p>
+                </div>
+            </div>
         </section>
 
+        <!-- STAFF -->
+        <section class="staff-section">
+            <div class="carousel">
+                <!-- Slide demo -->
+                <div class="carousel-slide active">
+                    <div class="carousel-content">
+                        <!-- Left -->
+                        <div class="staff-text">
+                            <h2>NUESTRAS SEDES</h2>
+                            <h3>Sede Springfield</h3>
+                            <p>📍 742 Evergreen Terrace</p>
+                            <span class="insta">📸 @sedespringield</span>
+                        </div>
+
+                        <!-- Right -->
+                        <div class="staff-videos">
+                            <video src="assets/videos/0.mp4" controls></video>
+                            <video src="assets/videos/0.mp4" controls></video>
+                            <video src="assets/videos/0.mp4" controls></video>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-slide">
+                    <div class="carousel-content">
+                        <!-- Left -->
+                        <div class="staff-text">
+                            <h2>NUESTRAS SEDES</h2>
+                            <h3>Sede Mordor</h3>
+                            <p>📍 Barad-dûr</p>
+                            <span class="insta">📸 @sedemordor</span>
+                        </div>
+
+                        <!-- Right -->
+                        <div class="staff-videos">
+                            <video src="assets/videos/0.mp4" controls></video>
+                            <video src="assets/videos/1.mp4" controls></video>
+                            <video src="assets/videos/2.mp4" controls></video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bullets -->
+                <div class="carousel-bullets">
+                    <span class="bullet active"></span>
+                    <span class="bullet"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- STAFF MOBILE -->
+        <section class="staff-section-mobile">
+            <h2>NUESTRAS SEDES</h2>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    Sede Springfield
+                </button>
+                <div class="accordion-content">
+                    <p>Dirección: 742 Evergreen Terrace</p>
+                    <span class="insta">📸 @sedespringfield</span>
+                    <video src="assets/videos/0.mp4" controls></video>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    Sede Mordor
+                </button>
+                <div class="accordion-content">
+                    <p>📍Barad-dûr</p>
+                    <span class="insta">📸 @sedemordor</span>
+                    <video src="assets/videos/1.mp4" controls></video>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
         <section class="testimonials" aria-label="Testimonios de clientes">
             <article class="testimonial">
                 <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Foto de María González">
@@ -103,11 +185,20 @@
     </main>
 
     <footer>
-        <p>Contacto: <a href="mailto:info@coaching.com">info@coaching.com</a> | Teléfono: +54 (376) 512-3456
-        </p>
-        <p>© 2025 Coaching. Todos los derechos reservados.</p>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>Contacto: <a href="mailto:efico@nestorlucero.com">efico@nestorlucero.com</a> | Teléfono: +54 (376)
+                    512-3456</p>
+                <p>© 2025 EFICO. Todos los derechos reservados.</p>
+            </div>
+            <div class="footer-images">
+                <img src="assets/images/qr.png" alt="QR Code">
+                <img src="assets/images/validation.png" alt="Validation">
+            </div>
+        </div>
     </footer>
 
+    <!--
     <div class="floating-cta" role="region" aria-label="Contactos rápidos">
         <a href="tel:+541112345678" class="desktop">Solicitá un asesor</a>
         <a href="https://wa.me/5491112345678" target="_blank" rel="noopener" class="desktop">Consultá por WhatsApp</a>
@@ -115,7 +206,9 @@
         <a href="tel:+541112345678" aria-label="Solicitar llamada">👤</a>
         <a href="https://wa.me/5491112345678" target="_blank" rel="noopener" aria-label="Consultar por WhatsApp"
             class="wa">🟢</a>
-    </div>
+    </div>-->
+
+    <script src="scripts/carousel.js" defer></script>
 </body>
 
 </html>

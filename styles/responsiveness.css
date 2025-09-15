@@ -1,0 +1,118 @@
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .header-socials {
+        margin-top: 0.5rem;
+        justify-content: center;
+    }
+
+    .logo img {
+        height: 70px;
+    }
+
+    .logo p {
+        font-size: 1.2rem;
+    }
+
+    .staff-section-mobile {
+        display: none;
+    }
+    .staff-section { display: block;}
+
+    .accordion-header {
+        text-align: center;
+    }
+
+    .accordion-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+        font-family: var(--text);
+    }
+
+    .accordion-content video {
+        width: 100%;
+        max-width: 250px;
+        aspect-ratio: 9 / 16;
+        border-radius: 10px;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .staff-section {
+        display: none;
+    }
+    .staff-section-mobile {
+        display: block;
+    }
+}
+
+@media (max-width: 992px) {
+    .video-content,
+    .about-us-section .about-us-content,
+    .carousel-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .video-text,
+    .about-us-section .about-us-col-right,
+    .staff-text,
+    .staff-videos {
+        max-width: 100%;
+        flex: unset;
+        margin-bottom: 1.5rem;
+    }
+
+    .staff-videos {
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .video-wrapper iframe,
+    .staff-videos video {
+        max-width: 90%;
+    }
+
+    .btn-primary {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.5rem;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    .video-text h2,
+    .about-us-section .about-us-col-right h2,
+    .staff-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .video-text p,
+    .about-us-section .about-us-col-right p,
+    .staff-text p,
+    .staff-text span {
+        font-size: 0.9rem;
+    }
+
+    .btn-primary {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+    }
+}
