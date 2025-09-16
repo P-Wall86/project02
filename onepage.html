@@ -134,7 +134,7 @@
                     Sede Springfield
                 </button>
                 <div class="accordion-content">
-                    <p>Dirección: 742 Evergreen Terrace</p>
+                    <p> 📍742 Evergreen Terrace</p>
                     <span class="insta">📸 @sedespringfield</span>
                     <video src="assets/videos/0.mp4" controls></video>
                 </div>
@@ -152,25 +152,79 @@
             </div>
         </section>
 
-        <!-- Testimonials -->
-        <section class="testimonials" aria-label="Testimonios de clientes">
-            <article class="testimonial">
-                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Foto de María González">
-                <div class="testimonial-text">
-                    <p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quidem.”</p>
-                    <strong>— Aemilia</strong>
-                </div>
-            </article>
+        <!-- ACADEMIC PROGRAMS -->
+        <section class="offers-section">
+            <h2 class="offers-title">OFERTA ACADÉMICA</h2>
+            <div class="offers-grid">
 
-            <article class="testimonial">
-                <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Foto de Juan Pérez">
-                <div class="testimonial-text">
-                    <p>“Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, commodi.”</p>
-                    <strong>— Quintus</strong>
+                <div class="offer-block">
+                    <div class="offer-card carrera">
+                        <h3>CARRERAS</h3>
+                    </div>
+                    <div class="offer-info">
+                        <p><strong>📍</strong> Springfield</p>
+                        <p><strong>Duración:</strong> 1-2 años</p>
+                        <p><strong>Modalidad:</strong> Presencial</p>
+                        <p><strong>Título:</strong> A determinar</p>
+                        <div class="offer-buttons">
+                            <button class="btn-download">Más Info</button>
+                            <button class="btn-apply-degree">¡Inscribíte ahora!</button>
+                        </div>
+                    </div>
                 </div>
-            </article>
+
+                <div class="offer-block">
+                    <div class="offer-card postitulo">
+                        <h3>POSTÍTULOS</h3>
+                    </div>
+                    <div class="offer-info">
+                        <p><strong>📍</strong> Springfield / Mordor</p>
+                        <p><strong>Duración:</strong> 1 año</p>
+                        <p><strong>Modalidad:</strong> Online</p>
+                        <p><strong>Título:</strong> A determinar</p>
+                        <div class="offer-buttons">
+                            <button class="btn-download">Más Info</button>
+                            <button class="btn-apply-post">¡Inscribíte ahora!</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offer-block">
+                    <div class="offer-card curso">
+                        <h3>CURSOS CORTOS</h3>
+                    </div>
+                    <div class="offer-info">
+                        <p><strong>📍</strong> Mordor / Virtual</p>
+                        <p><strong>Duración:</strong> 6 meses</p>
+                        <p><strong>Modalidad:</strong> Híbrida</p>
+                        <p><strong>Título:</strong> A determinar</p>
+                        <div class="offer-buttons">
+                            <button class="btn-download">Más Info</button>
+                            <button class="btn-apply-course">¡Inscribíte ahora!</button>
+                        </div>
+                    </div>
+                </div>
         </section>
 
+        <!-- TESTIMONIALS -->
+        <section class="testimonials-fade" aria-label="Testimonios de clientes">
+            <div class="testimonial active">
+                <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti iste iure consectetur aspernatur,
+                    et excepturi blanditiis culpa quo nam earum!”</p>
+                <strong>— Aemilia (Carrera 2023)</strong>
+            </div>
+            <div class="testimonial">
+                <p>“Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, commodi.”</p>
+                <strong>— Quintus (Postítulo 2022)</strong>
+            </div>
+            <div class="testimonial">
+                <p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. At, magnam. Debitis consectetur facere
+                    deserunt minus autem aliquid hic porro veniam.”</p>
+                <strong>— Livia (Curso corto 2024)</strong>
+            </div>
+        </section>
+
+        <!-- CONTACT FORM -->
         <section class="download-section" id="contact-form">
             <h2>Descargá el catálogo completo de cursos</h2>
             <form action="#" method="POST" onsubmit="alert('Gracias por contactarte.'); return false;">
@@ -179,36 +233,33 @@
                 <input type="tel" name="phone" placeholder="Teléfono (opcional)" />
                 <button type="submit" class="btn-submit">Enviar y Descargar</button>
             </form>
-            <p class="privacy-note">Tus datos están seguros con nosotros.</p>
         </section>
-
     </main>
 
+    <!-- FOOTER -->
     <footer>
-    <div class="footer-container">
-        <div class="footer-info">
-            <p>Contacto: <a href="mailto:efico@nestorlucero.com">efico@nestorlucero.com</a></p>
-            <p>Teléfono: +54 (376) 512-3456</p>
-            <p>© 2025 EFICO. Todos los derechos reservados.</p>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>Contacto: <a href="mailto:efico@nestorlucero.com">efico@nestorlucero.com</a></p>
+                <p>Teléfono: +54 (376) 512-3456</p>
+                <p>© 2025 EFICO. Todos los derechos reservados.</p>
+            </div>
+            <div class="footer-images">
+                <img src="assets/images/QR.png" alt="QR Code">
+                <img src="assets/images/validation.png" alt="Validation">
+            </div>
         </div>
-        <div class="footer-images">
-            <img src="assets/images/QR.png" alt="QR Code">
-            <img src="assets/images/validation.png" alt="Validation">
-        </div>
-    </div>
-</footer>
+    </footer>
 
     <!--
     <div class="floating-cta" role="region" aria-label="Contactos rápidos">
         <a href="tel:+541112345678" class="desktop">Solicitá un asesor</a>
         <a href="https://wa.me/5491112345678" target="_blank" rel="noopener" class="desktop">Consultá por WhatsApp</a>
-
-        <a href="tel:+541112345678" aria-label="Solicitar llamada">👤</a>
-        <a href="https://wa.me/5491112345678" target="_blank" rel="noopener" aria-label="Consultar por WhatsApp"
-            class="wa">🟢</a>
     </div>-->
 
     <script src="scripts/carousel.js" defer></script>
+    <script src="scripts/testimonials.js" defer></script>
+    <script src="scripts/offer.js" defer></script>
 </body>
 
 </html>

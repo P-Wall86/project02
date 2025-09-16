@@ -19,6 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
 //ACCORDION
 document.addEventListener('DOMContentLoaded', () => {
     const headers = document.querySelectorAll('.accordion-header');
+    const contents = document.querySelectorAll('.accordion-content');
+
+    contents.forEach(c => c.style.display = 'none');
 
     headers.forEach(header => {
         header.addEventListener('click', () => {
