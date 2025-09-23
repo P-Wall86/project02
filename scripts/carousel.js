@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-//ACCORDION
+/*ACCORDION
 document.addEventListener('DOMContentLoaded', () => {
     const headers = document.querySelectorAll('.accordion-header');
     const contents = document.querySelectorAll('.accordion-content');
@@ -34,4 +34,4 @@ document.addEventListener('DOMContentLoaded', () => {
             content.style.display = (content.style.display === 'block') ? 'none' : 'block';
         });
     });
-});
+});*/
