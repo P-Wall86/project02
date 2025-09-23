@@ -128,16 +128,20 @@ main {
     max-width: 45%;
 }
 
-.video-text h2 {
-    margin-bottom: 1rem;
-    font-size: 2rem;
+.video-section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
     font-family: var(--titles);
+    font-style: italic;
+    font-weight: bold;
 }
 
 .video-text p {
     font-size: 1.1rem;
     line-height: 1.5;
     font-family: var(--text);
+    margin-bottom: 1rem;
 }
 
 .btn-primary {
@@ -165,50 +169,50 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: -4.5rem;
 }
 
-.video-wrapper iframe {
+.video-wrapper video {
     width: 100%;
     max-width: 600px;
     aspect-ratio: 16 / 9;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 /*2. About Us*/
 .about-us-section {
     color: var(--primary-color);
     margin-bottom: 3rem;
-    padding: 4rem 1rem;
+    padding: 1rem 1rem;
+    text-align: center;
 }
 
 .about-us-section .about-us-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 2rem;
 }
 
-.about-us-section .about-us-col-left {
-    flex: 1;
-    max-width: 45%;
-}
-
-.about-us-section .about-us-col-right {
-    flex: 1.2;
-    max-width: 600px;
+.about-us-section .about-us-col-right.centered {
+    max-width: 700px;
 }
 
 .about-us-section .about-us-col-right h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     font-size: 2rem;
     font-weight: bold;
     font-family: var(--titles);
+    font-style: italic;
 }
 
 .about-us-section .about-us-col-right p {
     font-size: 1.1rem;
-    line-height: 1.5;
+    line-height: 1.6;
     font-family: var(--text);
+    margin-bottom: 1rem;
 }
 
 /*3. STAFF */
