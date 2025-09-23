@@ -16,10 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-/*ACCORDION
+// ACCORDION
 document.addEventListener('DOMContentLoaded', () => {
-    const headers = document.querySelectorAll('.accordion-header');
-    const contents = document.querySelectorAll('.accordion-content');
+    const headers = document.querySelectorAll('.staff-section-mobile .accordion-header');
+    const contents = document.querySelectorAll('.staff-section-mobile .accordion-content');
 
     contents.forEach(c => c.style.display = 'none');
 
@@ -27,11 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
         header.addEventListener('click', () => {
             const content = header.nextElementSibling;
 
-            document.querySelectorAll('.accordion-content').forEach(c => {
+            contents.forEach(c => {
                 if (c !== content) c.style.display = 'none';
             });
 
             content.style.display = (content.style.display === 'block') ? 'none' : 'block';
         });
     });
-});*/
+});
