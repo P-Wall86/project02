@@ -280,7 +280,7 @@ main section {
     flex: 1.2;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem 1rem;
+    gap: 2.5rem 2rem;
     justify-items: center;
 }
 
@@ -294,9 +294,15 @@ main section {
     max-width: 120px;
     aspect-ratio: 1/1;
     border-radius: 50%;
+    border: solid 6px var(--secondary-color);
     object-fit: cover;
     display: block;
     margin: 0 auto 1rem;
+    transition: filter 0.3s ease;
+}
+
+.staff-member img:hover {
+    filter: brightness(1.1);
 }
 
 .staff-member p {
@@ -365,6 +371,12 @@ main section {
     align-items: stretch;
     min-height: 380px;
     box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offer-block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
 }
 
 .offer-card.carrera {background: var(--secondary-color);}

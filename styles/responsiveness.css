@@ -1,3 +1,71 @@
+@media (max-width: 992px) {
+
+    .video-content,
+    .about-us-section .about-us-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .video-text,
+    .about-us-section .about-us-col-right {
+        max-width: 100%;
+        flex: unset;
+        margin-bottom: 1.5rem;
+    }
+
+    .video-wrapper {
+        margin-top: 0;
+        align-items: center;
+    }
+
+    .video-wrapper video {
+        max-width: 90%;
+    }
+
+    .video-wrapper video {
+        width: 100%;
+        max-width: 600px;
+        aspect-ratio: 16 / 9;
+        border-radius: 10px;
+    }
+
+    .video-section-title {
+        font-size: 2.5rem;
+    }
+
+    .about-us-col-right h2 {
+        font-size: 1.8rem;
+    }
+
+    .btn-primary {
+        width: 80%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .footer-info {
+        text-align: center;
+    }
+
+    .footer-images {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .footer-images img {
+        height: 70px;
+        width: auto;
+    }
+}
+
 @media (max-width: 768px) {
 
     /* HEADER */
@@ -96,7 +164,7 @@
     }
 
     .accordion-content {
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
@@ -165,7 +233,8 @@
     /* TESTIMONIALS */
     .testimonials-fade {
         max-width: 90%;
-        height: 150px;
+        min-height: 180px;
+        height: auto;
         padding: 1rem;
         overflow: hidden;
     }
@@ -178,74 +247,6 @@
 
     .testimonial strong {
         font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 992px) {
-
-    .video-content,
-    .about-us-section .about-us-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .video-text,
-    .about-us-section .about-us-col-right {
-        max-width: 100%;
-        flex: unset;
-        margin-bottom: 1.5rem;
-    }
-
-    .video-wrapper {
-        margin-top: 0;
-        align-items: center;
-    }
-
-    .video-wrapper video {
-        max-width: 90%;
-    }
-
-    .video-wrapper video {
-        width: 100%;
-        max-width: 600px;
-        aspect-ratio: 16 / 9;
-        border-radius: 10px;
-    }
-
-    .video-section-title {
-        font-size: 2.5rem;
-    }
-
-    .about-us-col-right h2 {
-        font-size: 1.8rem;
-    }
-
-    .btn-primary {
-        width: 80%;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 1rem;
-    }
-
-    .footer-info {
-        text-align: center;
-    }
-
-    .footer-images {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 1rem;
-    }
-
-    .footer-images img {
-        height: 70px;
-        width: auto;
     }
 }
 
