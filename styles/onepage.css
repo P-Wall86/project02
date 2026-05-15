@@ -416,6 +416,9 @@ main section {
     grid-template-columns: 1fr auto;
     align-items: center;
     gap: 2rem;
+    border: 2px var(--primary-color) solid;
+    padding: 2rem;
+    border-radius: 12px;
 }
 
 .coaching-text {
