@@ -164,6 +164,11 @@ main section {
     background-color: rgba(239, 123, 28, 0.8);
 }
 
+.btn-coaching {
+    margin: 0;
+    display: inline-block;
+}
+
 /* 1.2 Institutional video */
 .video-wrapper {
     flex: 1.2;
@@ -253,11 +258,13 @@ main section {
     flex: 1;
     max-width: 50%;
     color: var(--primary-color);
+    margin-bottom: 2rem;
 }
 
 .staff-text h2 {
     font-size: 2rem;
-    margin: 0.5rem;
+    margin-left: 2rem;
+    margin-bottom: 0.3rem;
     font-family: var(--titles);
     text-align: center;
     font-style: italic;
@@ -266,13 +273,62 @@ main section {
 .staff-text h3 {
     font-size: 1.5rem;
     font-family: var(--titles);
+    text-align: center;
+    margin: 0;
 }
 
-.staff-text p,
-.staff-text span {
+.staff-text p {
     font-size: 1rem;
     line-height: 1.4;
     font-family: var(--text);
+    text-align: center;
+}
+
+.staff-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.staff-socials a {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    color: var(--primary-color);
+
+    background: rgba(255, 255, 255, 0.85);
+
+    border: 2px solid rgba(0, 36, 170, 0.12);
+
+    transition:
+        transform 0.25s ease,
+        background-color 0.25s ease,
+        color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.staff-socials i {
+    font-size: 1.2rem;
+}
+
+.staff-socials a:hover {
+    background: var(--accent-color);
+
+    color: #fff;
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 10px 18px rgba(89, 0, 255, 0.25);
 }
 
 /* 3.2 Staff Pictures */
@@ -284,9 +340,17 @@ main section {
     justify-items: center;
 }
 
+.director-member {
+    margin-top: 1rem;
+}
+
+.director-member img {
+    margin-bottom: 1rem;
+}
+
 .staff-member {
     text-align: center;
-    padding-top: 1.2rem;
+    padding-top: 1rem;
 }
 
 .staff-member img {
@@ -339,6 +403,43 @@ main section {
 
 .staff-section-mobile {
     display: none;
+}
+
+/* 3.5 COACHING */
+.coaching-section {
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.coaching-content {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 2rem;
+}
+
+.coaching-text {
+    max-width: 600px;
+}
+
+.coaching-text h2 {
+    font-family: var(--titles);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.coaching-text p {
+    font-family: var(--text);
+    color: #444;
+}
+
+.cta-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 /* 4. ACADEMIC PROGRAMS */
@@ -622,31 +723,62 @@ footer {
     width: auto;
 }
 
-
-/*
-.floating-cta {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+/* FORM SELECTOR */
+.form-mode-selector {
     display: flex;
-    flex-direction: column;
-    gap: 0.7rem;
-    z-index: 1000;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
 
-.floating-cta a {
-    background: #000;
-    color: white;
-    padding: 0.8rem 1.2rem;
-    border-radius: 25px;
-    font-weight: 600;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-    text-align: center;
-    font-size: 0.9rem;
-    transition: background-color 0.3s ease;
-    width: 160px;
+.mode-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--secondary-color);
+    background: transparent;
+    cursor: pointer;
+    border-radius: 999px;
+    font-family: var(--text);
+    font-weight: bold;
+    transition: all 0.3s ease;
 }
 
-.floating-cta a:hover {
-    background: #333;
-}*/
+.mode-btn.active {
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+
+.form-group.extra {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+}
+
+#contact-form[data-mode="coaching"] .form-group.extra.coaching-only {
+    max-height: 200px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.form-title {
+    transition: all 0.3s ease;
+}
+
+select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: var(--text);
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+select:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+}

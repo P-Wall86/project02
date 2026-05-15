@@ -42,6 +42,22 @@
         width: 80%;
     }
 
+    .coaching-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .cta-wrapper {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .btn-primary {
+        width: 80%;
+        max-width: 300px;
+    }
+
     .footer-container {
         flex-direction: column;
         align-items: center;
@@ -82,9 +98,9 @@
     }
 
     .header-socials img {
-    width: 30px;
-    height: 30px;
-}
+        width: 30px;
+        height: 30px;
+    }
 
     .logo img {
         height: 70px;
@@ -102,6 +118,15 @@
     /* ABOUT US */
     .about-us-col-right h2 {
         font-size: 1.6rem;
+    }
+
+    /* COACHING */
+    .coaching-text h2 {
+        font-size: 1.6rem;
+    }
+
+    .coaching-text p {
+        font-size: 0.95rem;
     }
 
     /* ACADEMIC PROGRAMS */
@@ -250,6 +275,24 @@
     }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .coaching-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        justify-items: center;
+    }
+
+    .cta-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-primary {
+        width: auto;
+        min-width: 220px;
+    }
+}
+
 @media (max-width: 480px) {
     header {
         padding: 0.5rem;
@@ -281,5 +324,10 @@
     .btn-primary {
         font-size: 0.9rem;
         padding: 0.6rem 1rem;
+    }
+
+    /* COACHING */
+    .btn-primary {
+        width: 100%;
     }
 }

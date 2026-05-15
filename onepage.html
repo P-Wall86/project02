@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
@@ -52,8 +53,7 @@
                         experiencia entrenando coaches, y nuestro objetivo es formar profesionales competentes,
                         comprometidos con la transformación personal y profesional de quienes se forman con nosotros.
                     </p>
-                    <button class="btn-primary"
-                        onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">
+                    <button class="btn-primary" data-mode="catalogo">
                         Descargar Catálogo
                     </button>
                 </div>
@@ -101,7 +101,15 @@
                             <h2>CONOCÉ A NUESTRO EQUIPO</h2>
                             <h3>Sede Posadas</h3>
                             <p>📍La Rioja 1795, 1° piso</p>
-                            <span class="insta">📸 @efico.posadas</span>
+                            <div class="staff-socials">
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
 
                             <div class="staff-member">
                                 <img src="assets/images/IMG_20250602_133825_325.jpg" alt="Staff member">
@@ -144,10 +152,18 @@
                     <div class="carousel-content">
                         <!-- Left -->
                         <div class="staff-text">
-                            <h2>NUESTRAS SEDES</h2>
+                            <h2>CONOCÉ A NUESTRO EQUIPO</h2>
                             <h3>Sede San Juan Capital</h3>
                             <p>📍Av. Córdoba Este 469, San Juan</p>
-                            <span class="insta">📸 @efico.sanjuan</span>
+                            <div class="staff-socials">
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
 
                             <div class="staff-member">
                                 <img src="assets/images/IMG_20250602_133825_325.jpg" alt="Staff member">
@@ -190,47 +206,18 @@
                     <div class="carousel-content">
                         <!-- Left -->
                         <div class="staff-text">
-                            <h2>NUESTRAS SEDES</h2>
-                            <h3>Sede San Luis Capital</h3>
-                            <p>📍Calle N° 1234, piso 1</p>
-                            <span class="insta">📸 @efico.sanluis</span>
-
-                            <div class="staff-member">
-                                <img src="assets/images/IMG_20250602_133825_325.jpg" alt="Staff member">
-                                <p>MCOP Néstor Lucero</p>
-                            </div>
-                        </div>
-
-                        <!-- Right -->
-                        <div class="staff-members">
-                            <div class="staff-member">
-                                <img src="assets/images/IMG_20250602_133825_325.jpg" alt="Staff member">
-                                <p>SCOP Beatriz Martínez</p>
-                            </div>
-                            <div class="staff-member">
-                                <img src="assets/images/IMG_20250602_133825_325.jpg" alt="Staff member">
-                                <p>COPa Stella Maris Rizzotto</p>
-                            </div>
-                            <div class="staff-member">
-                                <img src="assets/images/IMG_20250602_133825_325.jpg" alt="Staff member">
-                                <p>COPa Patricia Calvente</p>
-                            </div>
-                            <div class="staff-member">
-                                <img src="assets/images/IMG_20250602_133825_325.jpg" alt="Staff member">
-                                <p>COPa Silvana Di Prima</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide Four -->
-                <div class="carousel-slide">
-                    <div class="carousel-content">
-                        <!-- Left -->
-                        <div class="staff-text">
-                            <h2>NUESTRAS SEDES</h2>
+                            <h2>CONOCÉ A NUESTRO EQUIPO</h2>
                             <h3>Sede 100% Virtual</h3>
                             <p>📍Zoom Workplace</p>
+                            <div class="staff-socials">
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
 
                             <div class="staff-member">
                                 <img src="assets/images/IMG_20250602_133825_325.jpg" alt="Staff member">
@@ -259,7 +246,6 @@
                 <!-- Bullets -->
                 <div class="carousel-bullets">
                     <span class="bullet active"></span>
-                    <span class="bullet"></span>
                     <span class="bullet"></span>
                     <span class="bullet"></span>
                 </div>
@@ -359,42 +345,6 @@
 
             <!-- Drop 3 -->
             <div class="accordion-item">
-                <button class="accordion-header">Sede San Luis Capital</button>
-                <div class="accordion-content">
-                    <!-- Info -->
-                    <div class="staff-text">
-                        <p>📍Calle N° 1234</p>
-                        <span class="insta">📸 @efico.sanluis</span>
-                        <div class="staff-member-founder">
-                            <img src="assets/images/IMG_20250602_133825_325.jpg" alt="Fundador">
-                            <p>MCOP Néstor Lucero</p>
-                        </div>
-                    </div>
-
-                    <!-- Staff-->
-                    <div class="staff-members">
-                        <div class="staff-member">
-                            <img src="assets/images/IMG_20250602_133825_325.jpg" alt="Staff member">
-                            <p>SCOP Beatriz Martínez</p>
-                        </div>
-                        <div class="staff-member">
-                            <img src="assets/images/IMG_20250602_133825_325.jpg" alt="Staff member">
-                            <p>COPa Stella Maris Rizzotto</p>
-                        </div>
-                        <div class="staff-member">
-                            <img src="assets/images/IMG_20250602_133825_325.jpg" alt="Staff member">
-                            <p>COPa Patricia Calvente</p>
-                        </div>
-                        <div class="staff-member">
-                            <img src="assets/images/IMG_20250602_133825_325.jpg" alt="Staff member">
-                            <p>COPa Silvana Di Prima</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Drop 4 -->
-            <div class="accordion-item">
                 <button class="accordion-header">Sede 100% Virtual</button>
                 <div class="accordion-content">
                     <!-- Info -->
@@ -423,6 +373,27 @@
                     </div>
                 </div>
             </div>
+            </div>
+        </section>
+
+        <!-- COACHING -->
+        <section class="coaching-section">
+            <div class="coaching-content">
+                <div class="coaching-text">
+                    <h2>
+                        ENCONTRÁ EL ACOMPAÑAMIENTO ADECUADO
+                    </h2>
+
+                    <p>
+                        Elegí la sede y el coach para comenzar tu experiencia.
+                    </p>
+                </div>
+
+                <div class="cta-wrapper">
+                        <button class="btn-primary btn-coaching" data-mode="coaching">
+                            Coordiná tu primera sesión
+                        </button>
+                </div>
             </div>
         </section>
 
@@ -501,22 +472,62 @@
         </section>
 
         <!-- CONTACT FORM -->
-        <section class="download-section" id="contact-form">
-            <h2>DESCARGÁ EL CATÁLOGO COMPLETO DE CURSOS</h2>
+        <section class="download-section" id="contact-form" data-mode="catalogo">
+
+            <h2 class="form-title">
+                TE AYUDAMOS A DAR EL PRÓXIMO PASO
+            </h2>
+
+            <!-- SELECTOR DE INTENCIÓN -->
+            <div class="form-mode-selector">
+                <button type="button" class="mode-btn active" data-mode="catalogo">
+                    Descargar Catálogo
+                </button>
+                <button type="button" class="mode-btn" data-mode="coaching">
+                    Elegí Coach
+                </button>
+            </div>
+
             <form action="#" method="POST" onsubmit="alert('Gracias por contactarte.'); return false;">
+
                 <div class="form-group">
-                    <label for="name">Nombre Completo</label>
-                    <input type="text" name="fullname" placeholder="Nombre y apellido" required>
+                    <label for="fullname">Nombre Completo</label>
+                    <input id="fullname" type="text" name="fullname" placeholder="Nombre y apellido" required>
                 </div>
+
                 <div class="form-group">
                     <label for="email">Correo electrónico</label>
-                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                    <input id="email" type="email" name="email" placeholder="Correo electrónico" required>
                 </div>
+
                 <div class="form-group">
                     <label for="phone">Teléfono</label>
-                    <input type="tel" name="phone" placeholder="Teléfono (opcional)">
+                    <input id="phone" type="tel" name="phone" placeholder="Teléfono (opcional)">
                 </div>
-                <button type="submit" class="btn-submit">Enviar y Descargar</button>
+
+                <!-- CAMPOS SOLO COACHING -->
+                <div class="form-group extra coaching-only">
+                    <label for="sede">Sede</label>
+                    <select id="sede" name="sede">
+                        <option value="">Elegí una sede</option>
+                        <option value="posadas">Posadas</option>
+                        <option value="sanjuan">San Juan</option>
+                        <option value="virtual">Virtual</option>
+                    </select>
+                </div>
+
+                <div class="form-group extra coaching-only">
+                    <label for="coach">Coach</label>
+                    <select id="coach" name="coach">
+                        <option value="">Elegí un coach</option>
+                        <option>Coach A</option>
+                        <option>Coach B</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-submit">
+                    Enviar y Descargar
+                </button>
             </form>
         </section>
     </main>
@@ -534,12 +545,6 @@
             </div>
         </div>
     </footer>
-
-    <!--
-    <div class="floating-cta" role="region" aria-label="Contactos rápidos">
-        <a href="tel:+541112345678" class="desktop">Solicitá un asesor</a>
-        <a href="https://wa.me/5491112345678" target="_blank" rel="noopener" class="desktop">Consultá por WhatsApp</a>
-    </div>-->
 
     <script src="scripts/carousel.js" defer></script>
     <script src="scripts/offer.js" defer></script>
