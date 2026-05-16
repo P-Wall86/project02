@@ -34,12 +34,24 @@
         font-size: 2.5rem;
     }
 
-    .about-us-col-right h2 {
-        font-size: 1.8rem;
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .value-card {
+        text-align: center;
     }
 
     .btn-primary {
         width: 80%;
+    }
+
+    .staff-socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin: 1rem 0 1rem;
     }
 
     .coaching-content {
@@ -89,11 +101,11 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 0.5rem;
+        gap: 0.4rem;
     }
 
     .header-socials {
-        margin-top: 0.5rem;
+        margin-top: 0.2rem;
         justify-content: center;
     }
 
@@ -103,21 +115,19 @@
     }
 
     .logo img {
-        height: 70px;
+        height: 55px;
     }
 
-    .logo p {
-        font-size: 1.2rem;
+    .slogan {
+        font-size: 1.4rem;
+        margin: 0;
+        padding: 0;
+        text-align: center;
     }
 
     /* VIDEO */
     .video-section-title {
         font-size: 2.2rem;
-    }
-
-    /* ABOUT US */
-    .about-us-col-right h2 {
-        font-size: 1.6rem;
     }
 
     /* COACHING */
@@ -276,6 +286,21 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    .logo img {
+        width: 225px;
+        height: auto;
+    }
+    
+    .slogan {
+        font-size: 1.4rem;
+        padding: 0.2rem 0;
+    }
+
+    .header-socials img {
+        width: 25px;
+        height: 25px;
+    }
+
     .coaching-content {
         grid-template-columns: 1fr;
         text-align: center;
@@ -295,21 +320,27 @@
 
 @media (max-width: 480px) {
     header {
-        padding: 0.5rem;
+        padding: 0.4rem;
     }
 
     .logo img {
-        height: 60px;
+        height: 48px;
+    }
+
+    .slogan {
+        font-size: 1.2rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header-socials img {
+        width: 25px;
+        height: 25px;
     }
 
     /* VIDEO */
     .video-section-title {
         font-size: 1.8rem;
-    }
-
-    /* ABOUT US */
-    .about-us-col-right h2 {
-        font-size: 1.4rem;
     }
 
     .video-text p,

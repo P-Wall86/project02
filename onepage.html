@@ -16,16 +16,24 @@
 <body>
     <header>
         <div class="header-container">
-            <div class="logo"><img src="assets/images/logotest.webp" alt="Logo EFICO">
-                <p>"Cree en ti, haz lo que amas y transforma tu mundo."</p>
+            <div class="logo">
+                <img src="assets/images/logotest.webp" alt="Logo EFICO">
             </div>
+
+            <p class="slogan">"Cree en ti, haz lo que amas y transforma tu mundo."</p>
+
             <div class="header-socials">
-                <a href="https://instagram.com" target="_blank" aria-label="Instagram"></a>
-                <img src="assets/images/insta.svg" alt="Instagram">
-                <a href="https://facebook.com" target="_blank" aria-label="Facebook"></a>
-                <img src="assets/images/fb.svg" alt="Facebook">
-                <a href="https://youtube.com" target="_blank" aria-label="YouTube"></a>
-                <img src="assets/images/youtube.svg" alt="YouTube">
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="assets/images/insta.svg" alt="Instagram">
+                </a>
+
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="assets/images/fb.svg" alt="Facebook">
+                </a>
+
+                <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+                    <img src="assets/images/youtube.svg" alt="YouTube">
+                </a>
             </div>
         </div>
     </header>
@@ -33,25 +41,30 @@
     <main>
         <!-- VIDEO SECTION -->
         <section class="video-section">
-            <h1 class="video-section-title">BIENVENIDOS A EfiCO</h1>
+            <p class="video-section-kicker">Formación Integral en Coaching Ontológico</p>
+            <h1 class="video-section-title">BIENVENIDOS A <span>EfiCO</span></h1>
             <div class="video-content">
                 <!-- School -->
                 <div class="video-text">
                     <p>
                         EFICO es una escuela de coaching que nació en octubre de 2023 y comenzamos nuestras actividades
-                        en marzo de 2024. Ofrecemos formación presencial, virtual y postítulos avalados por AACOP,
+                        en marzo de 2024. Ofrecemos <span class="text-highlight">formación presencial, virtual y
+                            postítulos</span> avalados por AACOP,
                         combinando teoría, práctica y desarrollo personal.
                     </p>
                     <p>
-                        Contamos con sedes en Posadas (Misiones), San Juan, San Luis y una modalidad 100% virtual,
-                        combinando
-                        clases presenciales, sincrónicas por Zoom y grabadas, para que los estudiantes puedan formarse
-                        desde cualquier lugar.
+                        Contamos con sedes en <strong>Posadas (Misiones), San Juan</strong> y una modalidad 100%
+                        virtual,
+                        combinando clases presenciales, sincrónicas por Zoom y grabadas, para que los estudiantes puedan
+                        formarse desde cualquier lugar.
                     </p>
                     <p>
-                        Aunque la escuela es nueva, nuestro fundador MCOP Néstor Lucero cuenta con más de 10 años de
-                        experiencia entrenando coaches, y nuestro objetivo es formar profesionales competentes,
-                        comprometidos con la transformación personal y profesional de quienes se forman con nosotros.
+                        Aunque la escuela es nueva, nuestro fundador MCOP Néstor Lucero cuenta con <strong>más de 10
+                            años de
+                            experiencia</strong> entrenando coaches, y nuestro objetivo es formar profesionales
+                        competentes,
+                        comprometidos con la <span class="text-highlight">transformación personal y profesional</span>
+                        de quienes se forman con nosotros.
                     </p>
                     <button class="btn-primary" data-mode="catalogo">
                         Descargar Catálogo
@@ -68,25 +81,40 @@
         </section>
 
         <!-- ABOUT US -->
-        <section class="about-us-section">
-            <div class="about-us-content">
-                <div class="about-us-col-right centered">
-                    <h2>QUÉ NOS MUEVE</h2>
+        <section class="values-section">
+            <h2 class="section-title">QUÉ NOS MUEVE</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>MISIÓN</h3>
                     <p>
-                        Somos un equipo de profesionales multidisciplinarios comprometidos en crear y facilitar espacios
-                        de transformación para todos aquellos que buscan expandir su manera de Ser, y formamos COP de
-                        excelencia ofreciendo postítulos de perfeccionamiento profesional y cursos de desarrollo
-                        personal.
-                    </p>
-                    <p>
-                        Buscamos generar espacios de transformación personal para quienes desean potenciar su ser.
-                    </p>
-                    <p>
-                        Nos guían valores como la excelencia académica, la calidad formativa, el respeto por la vida y
-                        sus procesos, el trabajo en equipo, el aprendizaje continuo, el compromiso y la transformación
-                        del Ser.
+                        Generar y facilitar espacios de transformación personal a través de formación profesional y
+                        acompañamiento, ofreciendo procesos claros que guíen el desarrollo del Ser.
                     </p>
                 </div>
+
+                <div class="value-card">
+                    <h3>VISIÓN</h3>
+                    <p>
+                        Ser una escuela de formación en coaching ontológico que integre excelencia académica con
+                        procesos de transformación personal, manteniendo un compromiso constante con la evolución de sus
+                        estudiantes y profesionales.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <h3>VALORES</h3>
+                    <ul>
+                        <li>Acompañamiento en el proceso del estudiante</li>
+                        <li>Claridad y simplicidad en la experiencia formativa</li>
+                        <li>Excelencia académica</li>
+                        <li>Transformación personal</li>
+                        <li>Aprendizaje continuo</li>
+                        <li>Trabajo en equipo</li>
+                        <li>Respeto por los procesos individuales</li>
+                        <li>Compromiso</li>
+                    </ul>
+                </div>
+
             </div>
         </section>
 
@@ -262,7 +290,15 @@
                     <!-- Info -->
                     <div class="staff-text">
                         <p>📍La Rioja 1795, 1° piso</p>
-                        <span class="insta">📸 @efico.posadas</span>
+                        <div class="staff-socials">
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <a href="#">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
                         <div class="staff-member-founder">
                             <img src="assets/images/IMG_20250602_133825_325.jpg" alt="Fundador">
                             <p>MCOP Néstor Lucero</p>
@@ -306,7 +342,15 @@
                     <!-- Info -->
                     <div class="staff-text">
                         <p>📍Av. Córdoba Este 469, San Juan</p>
-                        <span class="insta">📸 @efico.sanjuan</span>
+                        <div class="staff-socials">
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <a href="#">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
                         <div class="staff-member-founder">
                             <img src="assets/images/IMG_20250602_133825_325.jpg" alt="Fundador">
                             <p>MCOP Néstor Lucero</p>
@@ -350,6 +394,15 @@
                     <!-- Info -->
                     <div class="staff-text">
                         <p>📍Zoom Workplace</p>
+                        <div class="staff-socials">
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <a href="#">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
                         <div class="staff-member-founder">
                             <img src="assets/images/IMG_20250602_133825_325.jpg" alt="Fundador">
                             <p>MCOP Néstor Lucero</p>
@@ -390,16 +443,18 @@
                 </div>
 
                 <div class="cta-wrapper">
-                        <button class="btn-primary btn-coaching" data-mode="coaching">
-                            Coordiná tu primera sesión
-                        </button>
+                    <button class="btn-primary btn-coaching" data-mode="coaching">
+                        Coordiná tu primera sesión
+                    </button>
                 </div>
             </div>
         </section>
 
         <!-- ACADEMIC PROGRAMS -->
         <section class="offers-section">
-            <h2 class="offers-title">OFERTA ACADÉMICA</h2>
+            <p class="offers-kicker">Programas e Inscripciones</p>
+            <h2 class="offers-title">Nuestra Oferta Académica</h2>
+
             <div class="offers-grid">
 
                 <div class="offer-block">
@@ -407,11 +462,14 @@
                         <h3>CARRERAS</h3>
                     </div>
                     <div class="offer-info">
-                        <p><strong>📍</strong> Todas las sedes</p>
-                        <p><strong>Duración:</strong> 2 años</p>
-                        <p><strong>Modalidad:</strong> Presencial / Virtual</p>
-                        <p><strong>Título:</strong> Coach Ontológico Profesional (de validez nacional / internacional)
-                        </p>
+                        <ul class="offer-list">
+                            <li><span class="check"></span> <span><strong>Sedes:</strong> Todas las sedes</span></li>
+                            <li><span class="check"></span> <span><strong>Duración:</strong> 2 años</span></li>
+                            <li><span class="check"></span> <span><strong>Modalidad:</strong> Presencial</span></li>
+                            <li><span class="check"></span> <span>Título oficial con <span
+                                        class="highlight-inline">validez nacional</span></span></li>
+                        </ul>
+
                         <div class="offer-buttons">
                             <button class="btn-download">Descargar Brochure</button>
                             <button class="btn-apply-degree">¡Inscribíte ahora!</button>
@@ -424,13 +482,18 @@
                         <h3>POSTÍTULOS</h3>
                     </div>
                     <div class="offer-info">
-                        <p><strong>📍</strong> Todas las sedes </p>
-                        <p><strong>Duración:</strong> X años</p>
-                        <p><strong>Modalidad:</strong> Presencial </p>
-                        <p><strong>Título:</strong> A determinar</p>
+                        <ul class="offer-list">
+                            <li><span class="check"></span> <span><strong>Sedes:</strong> Todas las sedes</span></li>
+                            <li><span class="check"></span> <span><strong>Duración:</strong> A determinar</span></li>
+                            <li><span class="check"></span> <span><strong>Modalidad:</strong> Presencial /
+                                    Sincrónica</span></li>
+                            <li><span class="check"></span> <span>Especializaciones de <span
+                                        class="highlight-inline-alt">alto nivel</span></span></li>
+                        </ul>
+
                         <div class="offer-buttons">
-                            <button class="btn-download">Descargar brochure</button>
-                            <button class="btn-apply-post">¡Inscribíte ahora!</button>
+                            <button class="btn-download">Descargar Brochure</button>
+                            <button class="btn-apply-degree btn-apply-post">¡Inscribíte ahora!</button>
                         </div>
                     </div>
                 </div>
@@ -440,12 +503,12 @@
                         <h3>CURSOS CORTOS</h3>
                     </div>
                     <div class="offer-info">
-                        <p>
+                        <p class="coming-soon-text">
                             Disponible en 2026
                         </p>
                         <div class="offer-buttons">
-                            <button class="btn-download">Próximamente</button>
-                            <button class="btn-apply-course">Próximamente</button>
+                            <button class="btn-download disabled-btn">Próximamente</button>
+                            <button class="btn-apply-course disabled-btn">Próximamente</button>
                         </div>
                     </div>
                 </div>
