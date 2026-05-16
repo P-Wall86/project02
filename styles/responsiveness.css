@@ -94,6 +94,23 @@
     }
 }
 
+@media (max-width: 968px) {
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+    
+    .value-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
 @media (max-width: 768px) {
 
     /* HEADER */
@@ -360,5 +377,27 @@
     /* COACHING */
     .btn-primary {
         width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .download-section {
+        padding: 2rem 1.2rem;
+        margin: 2rem 1rem;
+        border-radius: 16px;
+    }
+    
+    .form-mode-selector {
+        flex-direction: column;
+        border-radius: 14px;
+        padding: 0.5rem;
+    }
+    
+    .mode-btn {
+        border-radius: 10px;
+    }
+    
+    .mode-btn.active {
+        border-radius: 10px;
     }
 }
