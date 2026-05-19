@@ -210,7 +210,7 @@ main section {
 
 /*2. Mission-Vision-Values */
 .values-section {
-    padding: 6rem 2rem;
+    padding: 3rem 2rem;
     text-align: center;
     background-color: #f4f6f9;
     border-top: 1px solid #e5e7eb;
@@ -229,8 +229,9 @@ main section {
 
 .section-title {
     font-family: var(--titles);
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     font-weight: bold;
+    font-style: italic;
     color: #1a1a1a;
     margin-bottom: 3rem;
     margin-top: 0;
@@ -350,7 +351,7 @@ main section {
 
 /*3. STAFF */
 .staff-section {
-    padding: 4rem 2rem;
+    padding: 3rem 2rem;
     background-color: #ffffff;
     max-width: 1200px;
     margin: 0 auto;
@@ -408,6 +409,7 @@ main section {
     font-family: var(--titles);
     color: #1a1a1a;
     font-weight: bold;
+    font-style:italic;
     line-height: 1.1;
 }
 
@@ -501,6 +503,7 @@ main section {
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem 2rem;
     justify-items: center;
+    margin: 3rem;
 }
 
 .staff-member {
@@ -593,7 +596,7 @@ main section {
     background: linear-gradient(135deg, #ffffff 0%, #f9fafb 100%);
     border: 1px solid #e5e7eb;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
-    padding: 3rem;
+    padding: 1rem;
     border-radius: 20px;
     position: relative;
     overflow: hidden;
@@ -668,7 +671,7 @@ main section {
 
 /* 4. ACADEMIC PROGRAMS */
 .offers-section {
-    padding: 3rem 1rem;
+    padding: 3rem 2rem;
     text-align: center;
     background-color: #ffffff;
 }
@@ -684,7 +687,7 @@ main section {
 }
 
 .offers-title {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     margin-top: 0;
     margin-bottom: 3rem;
     font-family: var(--titles);
@@ -907,13 +910,35 @@ main section {
     font-weight: bold;
 }
 
+.program-level-card h3 {
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 0 10px;
+}
+
 /*5. TESTIMONIALS */
+.testimonials-section {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #f4f6f9
+}
+
+.testimonials-kicker {
+    font-family: var(--text);
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--primary-color);
+    margin-bottom: 0.4rem;
+}
+
 .testimonials-fade {
     position: relative;
     width: 100%;
     max-width: 650px;
     min-height: 180px;
-    margin: 4rem auto;
+    margin: 0 auto 4rem auto !important;
     padding: 2.5rem;
     text-align: center;
 
@@ -978,11 +1003,12 @@ main section {
 .download-section h2 {
     color: #1a1a1a;
     font-family: var(--titles);
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+    font-style: italic;
     font-weight: bold;
     margin-bottom: 2rem;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
 }
 
 form {

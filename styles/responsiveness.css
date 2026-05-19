@@ -1,170 +1,199 @@
 @media (max-width: 992px) {
-
-    .video-content,
+.video-content,
     .about-us-section .about-us-content {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        gap: 2rem;
     }
 
     .video-text,
     .about-us-section .about-us-col-right {
-        max-width: 100%;
+        max-width: 90%;
         flex: unset;
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
     }
 
     .video-wrapper {
         margin-top: 0;
         align-items: center;
-    }
-
-    .video-wrapper video {
-        max-width: 90%;
+        width: 100%;
     }
 
     .video-wrapper video {
         width: 100%;
         max-width: 600px;
         aspect-ratio: 16 / 9;
-        border-radius: 10px;
+        border-radius: 12px;
     }
 
     .video-section-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
     }
 
     .values-grid {
         grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 0 1.5rem;
     }
 
     .value-card {
         text-align: center;
+        padding: 2.5rem 2rem;
     }
 
-    .btn-primary {
-        width: 80%;
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
     }
 
     .staff-socials {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
-        margin: 1rem 0 1rem;
+        gap: 1.2rem;
+        margin: 1.5rem 0;
     }
 
     .coaching-content {
         grid-template-columns: 1fr;
         text-align: center;
-        gap: 1rem;
+        gap: 2rem;
+        padding: 0 1rem;
     }
 
     .cta-wrapper {
         justify-content: center;
-        margin-top: 1rem;
+        margin-top: 1.5rem;
     }
 
     .btn-primary {
-        width: 80%;
+        width: 100%;
         max-width: 300px;
+        padding: 0.85rem 1.5rem;
     }
 
     .footer-container {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 1rem;
+        gap: 1.5rem;
+        padding: 1.5rem 1rem;
     }
 
     .footer-info {
         text-align: center;
+        line-height: 1.5;
     }
 
     .footer-images {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 1rem;
+        gap: 1.5rem;
     }
 
     .footer-images img {
-        height: 70px;
+        height: 60px;
         width: auto;
     }
 }
 
-@media (max-width: 968px) {
-    .values-grid {
+@media (min-width: 768px) and (max-width: 1024px) {
+.logo img {
+        width: 210px;
+        height: auto;
+    }
+    
+    .slogan {
+        font-size: 1.35rem;
+        padding: 0.4rem 0;
+    }
+
+    .header-socials img {
+        width: 26px;
+        height: 26px;
+    }
+
+    .coaching-content {
         grid-template-columns: 1fr;
+        text-align: center;
+        justify-items: center;
         gap: 1.5rem;
-        padding: 0 1rem;
     }
-    
-    .value-card {
-        padding: 2rem 1.5rem;
+
+    .cta-wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
-    
-    .section-title {
-        font-size: 1.8rem;
-        margin-bottom: 2.5rem;
+
+    .btn-primary {
+        width: auto;
+        min-width: 220px;
     }
 }
 
 @media (max-width: 768px) {
-
-    /* HEADER */
-    .header-container {
+.header-container {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 0.4rem;
+        gap: 0.6rem;
+        padding: 1rem 0;
     }
 
     .header-socials {
-        margin-top: 0.2rem;
+        margin-top: 0.4rem;
         justify-content: center;
+        gap: 0.8rem;
     }
 
     .header-socials img {
-        width: 30px;
-        height: 30px;
+        width: 28px;
+        height: 28px;
     }
 
     .logo img {
-        height: 55px;
+        height: 50px;
     }
 
     .slogan {
-        font-size: 1.4rem;
+        font-size: 1.25rem;
+        line-height: 1.3;
         margin: 0;
         padding: 0;
         text-align: center;
     }
 
-    /* VIDEO */
+    /* VIDEO & COACHING */
     .video-section-title {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
     }
 
-    /* COACHING */
     .coaching-text h2 {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
+        line-height: 1.2;
     }
 
     .coaching-text p {
         font-size: 0.95rem;
+        line-height: 1.5;
     }
 
     /* ACADEMIC PROGRAMS */
     .offers-grid {
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 1rem;
         align-items: center;
+        padding: 0 1rem;
     }
 
     .offer-block {
-        width: 90%;
+        width: 100%;
+        max-width: 450px;
         min-height: auto;
     }
 
@@ -175,27 +204,28 @@
         border-radius: 0 0 10px 10px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
-}
 
-@media (max-width: 767px) {
+    /* STAFF MOBILE */
+    .staff-section {
+        display: none;
+    }
 
-    /* STAFF */
     .staff-section-mobile {
         display: block;
-        padding: 1rem;
+        padding: 2rem 1rem;
         background: #f5f5f5;
     }
 
     .staff-section-mobile h2 {
         text-align: center;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
         color: var(--primary-color);
         font-family: var(--titles);
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .accordion-item {
-        margin-bottom: 1rem;
+        margin-bottom: 0.75rem;
         border: 1px solid #ccc;
         border-radius: 8px;
         overflow: hidden;
@@ -205,14 +235,15 @@
         width: 100%;
         background: var(--secondary-color);
         color: #fff;
-        padding: 0.75rem 1rem;
+        padding: 0.9rem 1rem;
         font-family: var(--titles);
-        font-size: 1.1rem;
+        font-size: 1rem;
         font-weight: bold;
         text-align: center;
         border: none;
         cursor: pointer;
         text-transform: uppercase;
+        letter-spacing: 0.5px;
     }
 
     .accordion-content {
@@ -221,7 +252,7 @@
         align-items: center;
         justify-content: flex-start;
         text-align: center;
-        padding: 1rem 1rem;
+        padding: 1.5rem 1rem;
         background: #fff;
     }
 
@@ -231,20 +262,21 @@
         align-items: center;
         text-align: center;
         margin: 0 auto;
-        max-width: 400px;
+        max-width: 100%;
         width: 100%;
-        padding: 0.5rem 0rem;
+        padding: 0 0 1rem 0;
+        font-size: 0.95rem;
     }
 
     .staff-members {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 1rem;
+        gap: 1.2rem;
     }
 
     .staff-member {
-        flex: 0 0 calc(33.333% - 1.5rem);
+        flex: 0 0 calc(33.333% - 0.8rem);
         max-width: 100px;
         text-align: center;
     }
@@ -273,16 +305,63 @@
         margin-bottom: 0.5rem;
     }
 
-    /* HID DESKTOP DISPO*/
-    .staff-section {
-        display: none;
+    /* MOBILE FORM & TESTIMONIALS*/
+    .download-section {
+        padding: 2rem 1.5rem;
+        margin: 3rem 1rem;
+        width: calc(100% - 2rem);
+        border-radius: 16px;
+    }
+    
+    .form-mode-selector {
+        flex-direction: column;
+        border-radius: 14px;
+        padding: 0.5rem;
     }
 
-    .staff-section-mobile {
-        display: block;
+    .download-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 
-    /* TESTIMONIALS */
+    .form-mode-selector {
+        flex-direction: column;
+        border-radius: 14px;
+        padding: 0.5rem;
+        gap: 0.4rem;
+    }
+
+    form {
+        gap: 1.1rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        padding: 0.8rem 1rem;
+        font-size: 0.95rem;
+    }
+
+    .testimonials-fade {
+        max-width: 90%;
+        min-height: 190px;
+        margin: 3rem auto;
+        padding: 1.5rem;
+    }
+
+    .testimonial p {
+        font-size: 0.95rem;
+        line-height: 1.4rem;
+    }
+    
+    .mode-btn, 
+    .mode-btn.active {
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+        border-radius: 10px;
+    }
+
     .testimonials-fade {
         max-width: 90%;
         min-height: 180px;
@@ -302,52 +381,18 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-    .logo img {
-        width: 225px;
-        height: auto;
-    }
-    
-    .slogan {
-        font-size: 1.4rem;
-        padding: 0.2rem 0;
-    }
-
-    .header-socials img {
-        width: 25px;
-        height: 25px;
-    }
-
-    .coaching-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-        justify-items: center;
-    }
-
-    .cta-wrapper {
-        display: flex;
-        justify-content: center;
-    }
-
-    .btn-primary {
-        width: auto;
-        min-width: 220px;
-    }
-}
-
 @media (max-width: 480px) {
     header {
-        padding: 0.4rem;
+        padding: 0.6rem 0;
     }
 
     .logo img {
-        height: 48px;
+        height: 44px;
     }
 
     .slogan {
-        font-size: 1.2rem;
-        margin: 0;
-        padding: 0;
+        font-size: 1.1rem;
+        padding: 0 0.5rem;
     }
 
     .header-socials img {
@@ -355,49 +400,19 @@
         height: 25px;
     }
 
-    /* VIDEO */
     .video-section-title {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .video-text p,
     .about-us-section .about-us-col-right p {
         font-size: 0.9rem;
-    }
-
-    .video-wrapper video {
-        max-width: 100%;
+        line-height: 1.5;
     }
 
     .btn-primary {
-        font-size: 0.9rem;
-        padding: 0.6rem 1rem;
-    }
-
-    /* COACHING */
-    .btn-primary {
+        font-size: 0.95rem;
+        padding: 0.75rem 1rem;
         width: 100%;
-    }
-}
-
-@media (max-width: 640px) {
-    .download-section {
-        padding: 2rem 1.2rem;
-        margin: 2rem 1rem;
-        border-radius: 16px;
-    }
-    
-    .form-mode-selector {
-        flex-direction: column;
-        border-radius: 14px;
-        padding: 0.5rem;
-    }
-    
-    .mode-btn {
-        border-radius: 10px;
-    }
-    
-    .mode-btn.active {
-        border-radius: 10px;
     }
 }
