@@ -1161,9 +1161,13 @@ footer {
     font-family: var(--text);
 }
 
-.footer-info { text-align: left; }
+.footer-info { 
+    text-align: left; 
+}
 
-p { margin: 0.3rem; }
+p { 
+    margin: 0.3rem;
+}
 
 .footer-info a {
     color: var(--accent-color);
