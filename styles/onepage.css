@@ -357,6 +357,32 @@ main section {
     margin: 0 auto;
 }
 
+.staff-header-global {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    width: 100%;
+}
+
+.staff-kicker {
+    font-family: var(--text);
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--secondary-color);
+    margin-bottom: 0.4rem;
+}
+
+.staff-header-global h2 {
+    font-size: 2.2rem;
+    margin: 0;
+    font-family: var(--titles);
+    color: #1a1a1a;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.1;
+}
+
 .carousel {
     position: relative;
     width: 100%;
@@ -391,26 +417,6 @@ main section {
     flex: 1;
     max-width: 40%;
     text-align: center;
-}
-
-.staff-kicker {
-    font-family: var(--text);
-    font-size: 0.85rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: var(--secondary-color);
-    margin-bottom: 0.4rem;
-}
-
-.staff-text h2 {
-    font-size: 2.2rem;
-    margin: 0 0 0.5rem 0;
-    font-family: var(--titles);
-    color: #1a1a1a;
-    font-weight: bold;
-    font-style:italic;
-    line-height: 1.1;
 }
 
 .staff-text h3 {
