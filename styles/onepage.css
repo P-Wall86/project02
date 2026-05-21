@@ -31,6 +31,7 @@ body {
     background: var(--background-color);
     color: #222;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 /*1. HEADER */
@@ -1252,7 +1253,7 @@ p {
 }
 
 .wsp-float-btn:hover {
-    transform: scale(1.08) translateY(-3px);
+    transform: translateY(-3px) scale(1.08);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
     background-color: #20ba5a;
 }

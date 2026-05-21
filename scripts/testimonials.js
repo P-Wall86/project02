@@ -66,9 +66,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const coaches = {
-        posadas: ["Coach A", "Coach B"],
-        sanjuan: ["Coach C"],
-        virtual: ["Coach A", "Coach C", "Coach D"]
+        posadas: ["Soledad de la Torre", "Carmen Somariva", "Elio Miloco", "Patricia Galarza", "Héctor Chamorro", "Leila Ruiz Díaz"],
+        sanjuan: ["Mónica Saavedra", "Cecilia Fiorentino", "Ingrid Gallardo", "Martín Puscama", "Natalia Rodríguez", "Silvia Galife"],
+        virtual: ["Mónica Saavedra", "Beatriz Martínez", "Carmen Somariva"]
     };
 
     const sede = document.getElementById("sede");
