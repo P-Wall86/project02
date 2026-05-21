@@ -1,19 +1,18 @@
 @media (max-width: 992px) {
 
     /* Galaxy Fold - MacBook Air */
-    .video-content,
-    .about-us-section .about-us-content {
+    .video-content {
         flex-direction: column;
         align-items: center;
         text-align: center;
         gap: 2rem;
     }
 
-    .video-text,
-    .about-us-section .about-us-col-right {
+    .video-text {
         max-width: 90%;
         flex: unset;
         margin-bottom: 2rem;
+        text-align: left;
     }
 
     .video-wrapper {
@@ -42,7 +41,7 @@
     }
 
     .value-card {
-        text-align: center;
+        text-align: left;
         padding: 2.5rem 2rem;
     }
 
@@ -103,8 +102,7 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-
+@media (min-width: 769px) and (max-width: 1024px) {
     /* iPad Air 4, iPad Pro 11, Galaxy Tab S7 */
     .logo img {
         width: 210px;
@@ -121,22 +119,40 @@
         height: 26px;
     }
 
+    .coaching-section {
+        padding: 3rem 2rem;
+    }
+
     .coaching-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-        justify-items: center;
-        gap: 1.5rem;
+        gap: 1rem;
+        padding: 1.8rem;
+    }
+
+    .coaching-text h2 {
+        font-size: 1.75rem;
+        text-align: left;
+    }
+
+    .coaching-text p {
+        font-size: 0.95rem;
+        text-align: left;
+        padding: 10px;
     }
 
     .cta-wrapper {
-        display: flex;
-        justify-content: center;
         width: 100%;
+        margin: 0;
     }
 
     .btn-primary {
-        width: auto;
-        min-width: 220px;
+        padding: 0.9rem 1.8rem;
+        font-size: 1rem;
+    }
+
+    .download-section {
+        max-width: 580px !important;
+        margin: 3rem !important;
+        width: 100% !important;
     }
 }
 
@@ -250,6 +266,7 @@
         cursor: pointer;
         text-transform: uppercase;
         letter-spacing: 0.5px;
+        font-style: italic;
     }
 
     .accordion-content {
@@ -419,7 +436,7 @@
     }
 
     .video-section-title {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
         padding: 10px;
         margin: 0;
     }
@@ -492,6 +509,10 @@
 
     .value-card p {
         font-size: 0.95rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
     }
 
     /* STAFF */
@@ -609,7 +630,8 @@
         width: 100%;
     }
 
-    .founder-role, .founder-name {
+    .founder-role,
+    .founder-name {
         white-space: nowrap;
         align-self: center;
         text-align: center;
@@ -652,5 +674,16 @@
         width: 100%;
         padding: 1rem;
         margin-top: 0;
+    }
+
+    /* ACADEMIC OFFER */
+    .offers-title {
+        font-size: 1.8rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .offers-section,
+    .testimonials section {
+        padding: 2rem 1rem;
     }
 }

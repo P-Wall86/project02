@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (title) {
                     title.textContent =
                         mode === "catalogo"
-                            ? "DESCARGÁ EL CATÁLOGO COMPLETO DE CURSOS"
+                            ? "DESCARGÁ EL CATÁLOGO COMPLETO"
                             : "RESERVÁ TU SESIÓN DE COACHING";
                 }
 

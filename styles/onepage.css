@@ -12,19 +12,19 @@
     --text: "dominik", sans-serif;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'upcil';
-    src: url('assets/fonts/upcil.woff') format('woff');
+    src: url('../assets/fonts/upcil.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'dominik';
-    src: url('assets/fonts/dominik.woff') format('woff');
+    src: url('../assets/fonts/dominik.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 body {
     margin: 0;
@@ -108,7 +108,7 @@ main section {
 .video-section-kicker {
     text-align: center;
     font-family: var(--text);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -425,6 +425,7 @@ main section {
     color: var(--primary-color);
     font-style: italic;
     margin-bottom: 0.5rem;
+    text-transform: uppercase;
 }
 
 .staff-address {
@@ -684,7 +685,7 @@ main section {
 
 .offers-kicker {
     font-family: var(--text);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -700,6 +701,7 @@ main section {
     color: #1a1a1a;
     font-style: italic;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .offers-grid {
@@ -740,7 +742,7 @@ main section {
 
 /* 4.2 Card info */
 .offer-card {
-    height: 110px;
+    height: 80px;
     border-radius: 15px 15px 0 0;
     display: flex;
     align-items: center;
@@ -761,6 +763,8 @@ main section {
 .offer-card h3 {
     letter-spacing: 1.5px;
     margin: 0;
+    font-size: 1.1rem;
+    font-style: italic;
 }
 
 .offer-card::after {
@@ -787,7 +791,7 @@ main section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 1.5rem;
+    gap: 10px;
 }
 
 .offer-info p {
@@ -944,7 +948,7 @@ main section {
     width: 100%;
     max-width: 650px;
     min-height: 180px;
-    margin: 0 auto 4rem auto !important;
+    margin: 0 auto !important;
     padding: 2.5rem;
     text-align: center;
 
@@ -995,15 +999,16 @@ main section {
 
 /* 6. FORM */
 .download-section {
-    padding: 2.5rem;
+    padding: 2rem;
+    margin: 3rem auto;
     border-radius: 20px;
     border: 1px solid #e5e7eb;
     background: #ffffff;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
-    margin: 6rem auto;
     max-width: 580px;
     text-align: center;
     box-sizing: border-box;
+    border-top: 4px solid var(--primary-color);
 }
 
 .download-section h2 {
@@ -1096,11 +1101,6 @@ select:focus {
 }
 
 /* 6.1 FORM SELECTOR */
-section#contact-form {
-    border-top: 4px solid var(--primary-color);
-    padding-top: 50px;
-}
-
 .form-mode-selector {
     display: flex;
     justify-content: center;
