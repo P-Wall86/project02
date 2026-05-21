@@ -875,8 +875,13 @@ main section {
     box-shadow: 0 6px 14px rgba(89, 0, 255, 0.3);
 }
 
-.btn-apply-course:hover {background: #8a7c7ca6;}
-.btn-apply-course {background: #8a7c7ca6;}
+.btn-apply-course:hover {
+    background: #8a7c7ca6;
+}
+
+.btn-apply-course {
+    background: #8a7c7ca6;
+}
 
 .disabled-btn {
     background: #f3f4f6 !important;
@@ -952,12 +957,12 @@ main section {
     padding: 2.5rem;
     text-align: center;
 
-    background: #ffffff; 
+    background: #ffffff;
     border: 1px solid #e5e7eb;
     border-radius: 20px;
 
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05), 
-                0 5px 15px rgba(0, 0, 0, 0.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05),
+        0 5px 15px rgba(0, 0, 0, 0.02);
 
     display: flex;
     align-items: center;
@@ -1167,11 +1172,11 @@ footer {
     font-family: var(--text);
 }
 
-.footer-info { 
-    text-align: left; 
+.footer-info {
+    text-align: left;
 }
 
-p { 
+p {
     margin: 0.3rem;
 }
 
@@ -1187,4 +1192,67 @@ p {
 .footer-images img {
     height: 90px;
     width: auto;
+}
+
+/* BACK TO TOP */
+.custom-top-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(15px);
+    
+    width: 45px;
+    height: 45px;
+    background-color: var(--accent-color);
+    color: #ffffff;            
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.custom-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.custom-top-btn:hover {
+    transform: translateX(-50%) translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    background-color: #8040FF;
+}
+
+/* WHATSAPP BUTTON */
+.wsp-float-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    z-index: 9999;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.wsp-float-btn:hover {
+    transform: scale(1.08) translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+    background-color: #20ba5a;
 }

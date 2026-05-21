@@ -90,3 +90,34 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+// BACK TO TOP
+document.addEventListener("DOMContentLoaded", () => {
+    const topBtn = document.getElementById("custom-back-to-top");
+    const contactForm = document.getElementById("contact-form");
+
+    window.addEventListener("scroll", () => {
+        const passedThreshold = window.scrollY > 400;
+        
+        let overForm = false;
+        if (contactForm) {
+            const rect = contactForm.getBoundingClientRect();
+            if (rect.top < window.innerHeight) {
+                overForm = true;
+            }
+        }
+
+        if (passedThreshold && !overForm) {
+            topBtn.classList.add("show");
+        } else {
+            topBtn.classList.remove("show");
+        }
+    });
+
+    topBtn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+});
