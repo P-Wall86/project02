@@ -119,15 +119,16 @@ main section {
 
 .video-content {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* 1.1 School */
 .video-text {
     flex: 1;
-    max-width: 45%;
 }
 
 .video-section-title {
@@ -187,7 +188,7 @@ main section {
 
 /* 1.2 Institutional video */
 .video-wrapper {
-    flex: 1.2;
+    flex: 1;
     max-width: 600px;
     display: flex;
     align-items: center;
@@ -511,7 +512,7 @@ main section {
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem 2rem;
     justify-items: center;
-    margin: 3rem;
+    margin: 1.5rem;
 }
 
 .staff-member {
@@ -559,7 +560,7 @@ main section {
 /* 3.4 Bullets */
 .carousel-bullets {
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 .carousel-bullets .bullet {
@@ -1199,11 +1200,11 @@ p {
 .custom-top-btn {
     position: fixed;
     bottom: 20px;
-    left: 50%;
+    left: 45%;
     transform: translateX(-50%) translateY(15px);
     
-    width: 45px;
-    height: 45px;
+    width: 30px;
+    height: 30px;
     background-color: var(--accent-color);
     color: #ffffff;            
     border: none;

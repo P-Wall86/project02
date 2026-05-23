@@ -66,9 +66,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const coaches = {
-        posadas: ["Soledad de la Torre", "Carmen Somariva", "Elio Miloco", "Patricia Galarza", "Héctor Chamorro", "Leila Ruiz Díaz"],
-        sanjuan: ["Mónica Saavedra", "Cecilia Fiorentino", "Ingrid Gallardo", "Martín Puscama", "Natalia Rodríguez", "Silvia Galife"],
-        virtual: ["Mónica Saavedra", "Beatriz Martínez", "Carmen Somariva"]
+        posadas: ["SCOP Soledad de la Torre", "SCOP Patricia Galarza", "COPa Carmen Somariva", "COPa Elio Milocco", "COPa Héctor Chamorro", "COPa Leila Ruiz Díaz"],
+        sanjuan: ["SCOP Silvia Galife", "COPa Cecilia Fiorentino", "COPa Fernando Aguiar", "COPa Marcelo Martín", "COPa Paola Coria", "COPa Lorena Gilabert", "COPa Romina Orduña"],
+        virtual: ["COPa Carmen Somariva"]
     };
 
     const sede = document.getElementById("sede");
