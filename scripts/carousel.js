@@ -41,31 +41,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
-
-//BUTTONS
-const form = document.getElementById("contact-form");
-
-document.querySelectorAll(".btn-primary").forEach(btn => {
-    btn.addEventListener("click", () => {
-
-        const mode = btn.dataset.mode;
-
-        form.dataset.mode = mode;
-
-        document.querySelectorAll(".mode-btn").forEach(b => {
-            b.classList.toggle("active", b.dataset.mode === mode);
-        });
-
-        form.scrollIntoView({
-            behavior: "smooth"
-        });
-
-        const title = form.querySelector(".form-title");
-
-        if (mode === "catalogo") {
-            title.textContent = "DESCARGÁ EL CATÁLOGO COMPLETO DE CURSOS";
-        } else {
-            title.textContent = "RESERVÁ TU SESIÓN DE COACHING";
-        }
-    });
-});
